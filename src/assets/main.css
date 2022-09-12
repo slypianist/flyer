@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800;900&display=swap');
+@import "./base.css";
+
+@font-face {
+  font-family: avonFntThin;
+  src: url(/font/GOTHIC.TTF);
+}
+
+@font-face {
+  font-family: avonFntBold;
+  src: url(/font/GOTHICB.TTF);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hidden {
+  display: none;
+}
+
+
+#app {
+  width: 100%;
+  height: 100vh;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+
+@media (min-width: 1024px) {}
+
+
+@media (min-width: 1300px) {
+
+  #app {
+    padding: 0;
+    display: inline;
+  }
+
+
+}
+
+.social-share ul li {
+  margin: 0 10px;
+}
+
+.footer-social .horizontal-list li svg{
+  background-color: #530697;
+  padding: 7px;
+  font-size: 15px;
+  color: white;
+  border-radius: 50%;
+}
+
+.footer-social .horizontal-list li h3{
+  font-family: avonFntBold ;
+  color: #530697;
+}
+
+.horizontal-list {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background: url('/bg.png') no-repeat;
+  background-color: #7c3fb1;
+  font-family: avonfntThin, sans-serif;
+
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgb(255, 254, 254);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 15px 30px -8px;
+  -webkit-box-shadowbox-shadow: rgba(0, 0, 0, 0.08) 0px 15px 30px -8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.08) 0px 15px 30px -8px;
+
+}
+
+.intro .logo {
+  width: 200px;
+  position: absolute;
+  top: 10%;
+  left: 3%;
+}
+
+.intro {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.intro .img-art img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 2px 14px 15px -7px rgba(0, 0, 0, 0.36);
+
+}
+
+.intro .img-art {
+  width: 400px;
+  overflow: hidden;
+  height: 400px;
+}
+
+
+@keyframes componentAnimate-data-v-3c127e16 {
+  0% {
+    transform: translate(0)
+  }
+
+  30% {
+    transform: translateY(-10px)
+  }
+
+  50% {
+    transform: translateY(4px)
+  }
+
+  70% {
+    transform: translateY(-15px)
+  }
+
+  to {
+    transform: translate(0)
+  }
+}
+
+.intro .content {
+  padding: 20px;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.intro .content .title h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+
+
+
+.user-info {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+
+}
+
+.user-info .content {
+  width: 50%;
+
+}
+
+.user-info .title h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+}
+
+.form-group {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.form-group .form-input {
+  width: 100%;
+  margin: 20px 0;
+}
+
+
+.form-group .form-input label {
+  display: block;
+  font-size: small;
+  padding-left: 2px;
+  color: rgb(61, 57, 57);
+
+}
+
+
+.form-group .form-input input {
+  border: 1.5px solid #d3d2d2;
+  padding: 5px 10px;
+  margin-top: 5px;
+  color: rgb(61, 57, 57);
+  border-radius: 5px;
+}
+
+
+.form-group .form-input input:focus {
+  outline: none;
+  border-color: #511eb1a3;
+
+}
+
+.form-group .form-input .file-box {
+  border: 1.5px solid rgb(211, 210, 210);
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.form-group .form-input .file-box span {
+  padding: 8px 10px;
+  background-color: #511eb1a3;
+  color: white;
+  border-radius: 0 4px 4px 0;
+
+}
+
+.img-placeholder {
+  width: 50%;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+}
+
+.img-placeholder img {
+  object-fit: contain !important;
+  width: 100%;
+  height: 350px;
+
+}
+
+.placeholder-box {
+  height: 300px;
+  width: 300px;
+  background-color: #eeeeee;
+  border: 1px dashed #d8d8d8;
+
+}
+
+
+
+button.Vbutton {
+  background-color: #7c3fb1dd;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 3px;
+  color: white;
+  transition: .2s ease-in;
+}
+
+
+button.Vbutton:hover {
+  background-color: #7c3fb1e3;
+
+}
+
+
+button:disabled {
+  background-color: #7c3fb1a6;
+  cursor: not-allowed;
+}
+
+button.Vbutton:disabled:hover {
+  background-color: #7c3fb1a6;
+}
+
+
+
+.tabContent {
+  animation: fadeIn .5s ease-in;
+
+}
+
+.controls {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  top: 1%;
+  z-index: 111;
+  left: 51%;
+}
+
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.mobile-enabled {
+  display: none;
+}
+
+
+.content .title {
+  margin: 30px 0;
+}
+
+
+.progress {
+  border: .5px solid rgba(208, 208, 208, 0.24);
+  box-shadow: 2px 14px 15px -7px rgba(229, 229, 229, 0.36);
+  border-radius: 5px;
+
+}
+
+.progress-bar {
+  height: 3px;
+  background: #7c3fb1e3;
+  border-radius: 5px;
+  width: 0;
+  transition: all 0.5s;
+}
+
+
+.Half.progress-bar {
+  width: 50%;
+
+}
+
+.Full.progress-bar {
+  width: 100%;
+}
+
+
+.social-share ul li a {
+  font-size: 22px;
+  color: #5306979f;
+}
+
+
+.social-share ul li a:hover {
+  color: #530697;
+  background-color: none !important;
+}
+
+
+
+.r-poster {
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  background: url('/bg.jpg');
+
+}
+
+.r-poster .user-section {
+  display: flex;
+  margin-top: 20px;
+}
+
+.r-poster .poster-header{
+  padding: 10px 20px;
+  font-size: 17px;
+  color: grey;
+}
+
+
+
+.r-poster .user-section {
+  display: flex;
+  padding: 1em 3em;
+  position: relative;
+  z-index: 100;
+  gap: 2em;
+}
+
+
+
+.r-poster .user-section .userImg {
+  width: 260px;
+  height: 220px;
+  position: relative;
+  padding: 15px;
+  background-color: white;
+  box-shadow: rgb(147, 147, 147) 0px 10px 20px -10px
+}
+
+.user-section .userImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.r-poster .userText h1 {
+  font-size: 33px;
+  font-weight: 800;
+  color: rgb(117, 80, 161);
+  margin-left: 20px;
+  line-height: 35px;
+  font-family: avonFntThin, sans-serif !important;
+}
+
+.r-poster .partner-section {
+  height: 420px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.r-poster .partner-img .sticker{
+  width: 100px;
+  position: absolute;
+  z-index: 222;
+  left: 40%;
+  top: -17%;
+  transform: rotate(-11deg);
+}
+
+.r-poster .userImg .sticker{
+  width: 50px;
+  position: absolute;
+  z-index: 222;
+  left: 40%;
+  top: -22%;
+}
+
+.r-poster .partner-section .partner-img{
+  width: 390px;
+  height: 360px;
+  background: white;
+  padding: 15px;
+  position: absolute;
+  top: -27%;
+  right: 9%;
+  transform: rotate(14deg);
+  z-index: 111;
+  box-shadow: rgb(70, 69, 69) -5px -5px 20px -10px
+
+}
+
+.r-poster .partner-section .partner-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+
+}
+
+.r-poster .partner-section{
+  position: relative;
+}
+
+
+
+.r-poster .poster-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.r-poster .poster-footer img {
+  width: 100%;
+}
+
+.footer-social {
+  width: 50%;
+}
+
+.r-poster .footer-text h3 {
+  font-size: 24px;
+  display: inline-block;
+  font-family: avonFntBold, sans-serif !important;
+  color: rgb(72, 43, 108);
+  line-height: 25px;
+}
+
+.r-poster .footer-text{
+  display: flex;
+}
+
+.r-poster .footer-text::before {
+  content: " ";
+  width: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  height: 50px;
+  background-color: rgb(24, 165, 85);
+}
+
+
+
+.r-poster .footer-social .horizontal-list li svg{
+  background-color: #530697;
+  padding: 7px;
+  font-size: 21px;
+  color: white;
+  border-radius: 50%;
+}
+
+.r-poster .footer-social .horizontal-list li h3{
+  font-family: avonFntBold ;
+  font-size: 21px;
+  color: #530697;}
+
+
+
+/* ---------------------------------------- */
+/* -------------Media Queries ------------- */
+/* ---------------------------------------- */
+
+
+
+/* ----------- Mobile----------- */
+
+/* Portrait and Landscape */
+@media (max-width: 990px) {
+  .pageContent {
+    padding: 0;
+  }
+
+
+  .intro .img-art {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+  }
+
+
+  .intro {
+    display: inline-block;
+  }
+
+  .intro .logo {
+    position: static;
+    width: 30%;
+  }
+
+  .mobile-enabled {
+    display: block;
+  }
+
+  .mobile-disabled {
+    display: none;
+  }
+
+  .intro .img-art {
+    width: 100%;
+  }
+
+  .intro .content {
+    width: 100%;
+  }
+
+  .page {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .buttons {
+    width: 100% ;
+  }
+
+  .user-info {
+    display: block;
+  }
+
+  .user-info .content {
+    width: 100%;
+  }
+
+  .img-placeholder {
+    width: 100%;
+    padding: 10px;
+  }
+
+
+
+  body {
+    background-image: none;
+    background-color: white;
+  }
+
+  .content .title {
+    margin: 50px 0;
+  }
+
+
+  .controls {
+    top: 63%;
+    left: 25%;
+  }
+
+  .r-poster{
+    width: 400px ;
+    height: 400px ;
+  }
+
+
+.r-poster .partner-section {
+  height: 180px ;
+}
+
+
+.r-poster .partner-img .sticker{
+  width: 43px ;
+  top: -10% ;
+}
+
+.r-poster .userImg .sticker{
+  width: 21px ; 
+  top: -10%;
+
+}
+
+
+.r-poster .poster-header{
+  font-size: 11px !important;
+  padding: 8px 10px !important;
+}
+
+.r-poster .partner-section .partner-img{
+  width: 208px ;
+  height: 208px ;
+  padding: 10px ;
+  top: -32% ;
+  right: 9% ;
+
+}
+
+
+.r-poster .userText h1 {
+  font-size: 17px ;
+  margin-left: 14px ;
+  line-height: 15px ;
+}
+
+
+.r-poster .user-section {
+  margin-top: 0px ;
+  padding: 1em  ;
+
+}
+
+.r-poster .poster-header{
+  padding: 10px 20px;
+  font-size: 17px;
+  color: grey;
+}
+
+.r-poster .user-section .userImg {
+  width: 140px ;
+  height: 111px ;
+  padding: 5px ;
+}
+
+
+.r-poster .footer-text h3 {
+  font-size: 12px ;
+  line-height: 15px ;
+}
+
+
+.r-poster .footer-text::before {
+  width: 5px ;
+  margin-right: 3px;
+  height: 30px ;
+}
+
+
+.r-poster .footer-social .horizontal-list li svg{
+  padding: 3px ;
+  font-size: 10px ;
+  color: white;
+  border-radius: 50%;
+}
+
+.r-poster .footer-social .horizontal-list li h3{
+  font-size: 10px ;
+
+}
+
+
+.r-poster .poster-footer {
+  width: 100% ;
+  bottom: 0;
+}
+
+.r-poster .poster-footer img {
+  width: 100% ;
+}
+
+}
